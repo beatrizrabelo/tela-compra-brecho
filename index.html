@@ -2,16 +2,187 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Virtual</title>
+
+    <title>Thrift Store Bee</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#8C52FF">
+    <meta name="msapplication-TileImage" content="./assets/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#8C52FF">
 
     <!-- Css -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
 
-    <h1>BEATRIZ RABELO</h1>
+    <!-- header -->
+
+    <header class="container-fluid">
+        <!-- container -->
+        <section class="container">
+            <!-- row -->
+            <article class="row">
+
+                <!-- logo -->
+                <a href="/" class="col-md-2">
+                    <img src="./assets/images/faviconpng.png" alt="Logo da empresa - Thrift Store Bee">
+                </a>
+
+                <!-- buscador -->
+                <form action="#" class="col-md-7">
+                    <input type="text" name="name" placeholder="Pesquisar...">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                    </button>
+                </form>
+
+                <!-- administrativo do cliente -->
+                <ul class="col-md-3 nav">
+                    <li class="nav-item">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                              </svg>
+
+                            Entrar
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <span class="notificacao">3</span>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                              </svg>
+                            Sacola
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-heart" viewBox="0 0 16 16">
+                                <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2Zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12Z"/>
+                                <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                              </svg>
+                            Contatos
+                        </a>
+                    </li>
+
+                </ul>
+                <!-- end administrativo do cliente -->
+
+            </article>
+            <!-- row -->
+        </section>
+        <!-- end container -->
+    </header>
+    <!-- end header -->
+
+    <!-- menu -->
+    <nav class="container-fluid nav-produtos">
+        <!-- container -->
+        <section class="container">
+            <!-- menu-->
+            <ul class="nav">
+                <!-- lista de itens -->
+                <li class="nav-item">
+                    Home
+                </li>
+
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                    Feminino
+
+                    <ul class="nav flex-column">
+                        <!-- sub menu -->
+                        <li class="nav-item">
+                            Blusas
+                        </li>
+
+                        <li class="nav-item">
+                            Vestidos
+                        </li>
+
+                        <li class="nav-item">
+                            Shorts
+                        </li>
+
+                        <li class="nav-item">
+                            Calças
+                        </li>
+
+                        <li class="nav-item">
+                            Lingirie
+                        </li>
+
+                        <li class="nav-item">
+                            Sapatos
+                        </li>
+                        <!-- sub menu -->
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                    Masculino
+                </li>
+
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                    Kids
+                </li>
+
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                    Acessórios
+                </li> 
+                <!-- lista de itens -->
+            </ul>
+            <!-- menu-->
+        </section>
+        <!-- end container -->
+    </nav>
+    <!-- end menu -->
+
+    <!-- imagem venda -->
+    <section id="imagens-vendas" class="container carousel slide" data-bs-ride="carousel">
+        <article class="carousel-inner">
+          <figure class="carousel-item active">
+            <center>
+                <img src="./assets/images/6 1.png" class="d-block w-30" alt="Imagens Vendas" 
+                width = 300px>
+            </center>
+          </figure>
+        </article>
+    </section>
+    <!-- imagem venda -->
+
 
     <!-- Arquivos Bootstrap-->
     <script src="./assets/js/jquery.js"></script>
