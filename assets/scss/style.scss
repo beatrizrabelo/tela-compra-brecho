@@ -1,5 +1,11 @@
 //Fontes
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Titan+One&display=swap');
 
+//Config 
+@import "./variaveis.scss";
+@import "./config.scss";
+
+//Componentes
+@import "./header.scss";
 //framework
 @import './bootstrap.scss';

@@ -37,7 +37,7 @@
         <!-- container -->
         <section class="container">
             <!-- row -->
-            <article class="row">
+            <article class="row d-flex align-items-center">
 
                 <!-- logo -->
                 <a href="/" class="col-md-2">
@@ -47,9 +47,9 @@
                 </a>
 
                 <!-- buscador -->
-                <form action="#" class="col-md-7">
+                <form action="#" class="col-md-7 d-flex align-items-center">
                     <input type="text" name="name" placeholder="Pesquisar...">
-                    <button>
+                    <button class="d-flex align-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                           </svg>
@@ -57,7 +57,7 @@
                 </form>
 
                 <!-- administrativo do cliente -->
-                <ul class="col-md-3 nav">
+                <ul class="col-md-3 nav d-flex align-items-center justify-content-around">
                     <li class="nav-item">
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
@@ -69,7 +69,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <span class="notificacao">3</span>
+                        <span class="notificacao d-flex align-items-center justify-content-center">1</span>
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
@@ -77,17 +77,6 @@
                             Sacola
                         </a>
                     </li>
-
-                    <li>
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-heart" viewBox="0 0 16 16">
-                                <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2Zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12Z"/>
-                                <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-                              </svg>
-                            Contatos
-                        </a>
-                    </li>
-
                 </ul>
                 <!-- end administrativo do cliente -->
 
@@ -106,8 +95,9 @@
             <ul class="nav">
                 <!-- lista de itens -->
                 <li class="nav-item">
-                    Home
+                    <a href="http://google.com">Home</a>
                 </li>
+
 
                 <li class="nav-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
